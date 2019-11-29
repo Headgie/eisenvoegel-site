@@ -112,6 +112,53 @@
 					</div>
 				</div>
 			</section>		
+<!-- End banner Area -->
+<section class="about-generic-area section-gap" id="coffee">
+		<div class="container">
+			<div class="row" > 
+				<div class="banner-content col-lg-12 col-lg-offset-1 col-md-12 " style="text-align: justify" > 
+					<h2>Кофейная песенка (2019)</h2>
+					<br>
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/coffee-single.jpg" alt="" class="img-fluid">
+						</div>
+						
+						<div class="col-md-8 mt-sm-20">
+							<p class="text-justify"> 
+									Была когда-то в Москве культовая кофейня с вывеской «Кофейня», но называли ее все почему-то «Австрийка». По стенам были развешаны фотографии Праги, то есть, некое опосредованное отношение к Австрии она имела. Она была малюсенькая, несколько тесно стоящих столиков. С кем только ни встречались там, по какому только поводу ни заходили. Теплое место было, свое. Насиженное. Там был и вкусный крепкий кофе, и глинтвейн, и что покрепче, пирожные, сэндвичи, все как надо. Но главное таилось в чем-то ином, неуловимом. И вот однажды, холодным ясным октябрьским воскресеньем, я пришла туда с друзьями. Мы пили кофе, курили (тогда еще можно было курить в кафе, и в этом было определенное очарование), болтали. Казалось, мы сидим там вечность. За окном постепенно темнело: осенью рано темнеет. Наконец один из нас вдруг решительно сказал: «Пойдемте уже!» Все согласились. И остались сидеть. Заказали еще кто кофе, кто глинтвейн. И просидели, кажется, еще несколько часов, пока тот же самый человек не сказал снова: «Пойдем!» И тут мы дружно встали, расплатились и вышли. Как будто эта команда ждала какого-то особенного стечения обстоятельств: нашей расслабленности, вечернего сумрака за окнами-витринами. И мы вышли из кафе в холод, темноту и вакханалию желтых листьев. Наверное, была уже середина октября. Это было оглушительно – после теплого, маленького, уютного кафе вдруг оказаться на улице, под деревьями, под небом.
+							</p>
+						</div>
+					</div>
+
+					<br> <br> 			
+	
+								  <div class="player">
+							<div class="control-container">
+								<div class="amplitude-play-pause" amplitude-song-index="11"></div>
+							</div>
+							<div id="volume-container">
+								<div class="amplitude-mute amplitude-not-muted"></div>
+								<input type="range" class="amplitude-volume-slider" step=".1" />
+							</div>
+							<div class="meta-container">
+								<div class="song-title">Кофейная песенка</div>
+							</div>
+							<progress class="amplitude-song-played-progress" amplitude-song-index="11" id="song-played-progress-12"></progress>
+					  </div>							  
+						
+						
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- start banner Area -->
+	<section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="img/coffee-plx.JPG" style="height: 450px;">
+		<div class="container">
+
+		</div>
+	</section>
+	<!-- End banner Area -->
 			
 <!-- End banner Area -->
 			<section class="about-generic-area section-gap" id="haven">
@@ -457,14 +504,19 @@
 				"url": "mp3/sky_09_evridika.mp3"
 			  },
 			  {
-				"name": "",
-				"artist": "Ангел",
+				"name": "Ангел",
+				"artist": "Железные птицы",
 				"url": "mp3/sky_10_angel.mp3"
 			  },
 			  {
-				"name": "",
-				"artist": "Гавань",
+				"name": "Гавань",
+				"artist": "Железные птицы",
 				"url": "mp3/Eisenvoegel-Haven.mp3"
+			  },
+			  {
+				"name": "Кофейная песенка",
+				"artist": "Железные птицы",
+				"url": "mp3/coffee.mp3"
 			  }
 			  
 			]
@@ -584,9 +636,17 @@
 
 			Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
 		  }
-		});				
+		});	
 		
-		
+		document.getElementById('song-played-progress-12').addEventListener('click', function( e ){
+		  if( Amplitude.getActiveIndex() == 10 ){
+			var offset = this.getBoundingClientRect();
+			var x = e.pageX - offset.left;
+
+			Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
+		  }
+		});			
+	
 		</script>
 		<script src="js/vendor/jquery-2.2.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
