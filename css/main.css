@@ -8,12 +8,12 @@
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: #8490ff;
+  background-color: #26704e;
   color: #fff;
 }
 
 ::selection {
-  background-color: #8490ff;
+  background-color: #26704e;
   color: #fff;
 }
 
@@ -809,7 +809,7 @@ td, th {
 }
 
 b, i, sup, sub, u, del {
-  color: #8490ff;
+  color: #45a578;
 }
 
 h1 {
@@ -944,25 +944,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .genric-btn.primary {
   color: #fff;
-  background: #8490ff;
+  background: #45a578;
   border: 1px solid transparent;
 }
 
 .genric-btn.primary:hover {
-  color: #8490ff;
-  border: 1px solid #8490ff;
+  color: #45a578;
+  border: 1px solid #45a578;
   background: #fff;
 }
 
 .genric-btn.primary-border {
-  color: #8490ff;
-  border: 1px solid #8490ff;
+  color: #45a578;
+  border: 1px solid #45a578;
   background: #fff;
 }
 
 .genric-btn.primary-border:hover {
   color: #fff;
-  background: #8490ff;
+  background: #45a578;
   border: 1px solid transparent;
 }
 
@@ -1098,7 +1098,7 @@ h1, h2, h3, h4, h5, h6 {
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
   background: #f9f9ff;
-  border-left: 2px solid #8490ff;
+  border-left: 2px solid #45a578;
 }
 
 .progress-table-wrap {
@@ -1222,7 +1222,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 14px;
   height: 14px;
-  border: 3px solid #8490ff;
+  border: 3px solid #45a578;
   background: #fff;
   top: 4px;
   left: 0;
@@ -1235,7 +1235,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ordered-list li {
   list-style-type: decimal-leading-zero;
-  color: #8490ff;
+  color: #45a578;
   font-weight: 500;
   line-height: 1.82em !important;
 }
@@ -1248,7 +1248,7 @@ h1, h2, h3, h4, h5, h6 {
 .ordered-list-alpha li {
   margin-left: 30px;
   list-style-type: lower-alpha;
-  color: #8490ff;
+  color: #45a578;
   font-weight: 500;
   line-height: 1.82em !important;
 }
@@ -1261,7 +1261,7 @@ h1, h2, h3, h4, h5, h6 {
 .ordered-list-roman li {
   margin-left: 30px;
   list-style-type: lower-roman;
-  color: #8490ff;
+  color: #45a578;
   font-weight: 500;
   line-height: 1.82em !important;
 }
@@ -1333,7 +1333,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-input-primary:focus {
   outline: none;
-  border: 1px solid #8490ff;
+  border: 1px solid #45a578;
 }
 
 .single-input-accent {
@@ -1394,7 +1394,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #8490ff;
+  background: #45a578;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -1477,7 +1477,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-switch input:checked + label:before {
-  background: #8490ff;
+  background: #45a578;
 }
 
 .confirm-switch {
@@ -1826,12 +1826,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .default-select .nice-select .list .option.selected {
-  color: #8490ff;
+  color: #45a578;
   background: transparent;
 }
 
 .default-select .nice-select .list .option:hover {
-  color: #8490ff;
+  color: #45a578;
   background: transparent;
 }
 
@@ -1881,12 +1881,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-select .nice-select .list .option.selected {
-  color: #8490ff;
+  color: #45a578;
   background: transparent;
 }
 
 .form-select .nice-select .list .option:hover {
-  color: #8490ff;
+  color: #45a578;
   background: transparent;
 }
 
@@ -1942,7 +1942,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-nav a:hover {
-  color: #8490ff;
+  color: #45a578;
 }
 
 @media (max-width: 992px) {
@@ -1989,15 +1989,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p1-gradient-bg, .primary-btn, .primary-btn2:hover, .header-btn, .donut-widget[data-chart-instance="1"] .donut-bite[data-segment-index="0"].large::after, .donut-widget[data-chart-instance="2"] .donut-bite[data-segment-index="0"].large::after, .donut-widget[data-chart-instance="3"] .donut-bite[data-segment-index="0"].large::after, .testimonial-area .overlay-bg, .footer-social a:hover, .single-footer-widget .bb-btn, .generic-banner {
-  background-image: -moz-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
-  background-image: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
-  background-image: -ms-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
+  background-image: -moz-linear-gradient(0deg, #7acc8b 0%, #2c7a56 100%);
+  background-image: -webkit-linear-gradient(0deg, #7acc8b 0%, #2c7a56 100%);
+  background-image: -ms-linear-gradient(0deg, #7acc8b 0%, #2c7a56 100%);
 }
 
 .p1-gradient-color, .sigle-service:hover .lnr, .single-blog h4:hover {
-  background: -moz-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
-  background: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
-  background: -ms-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
+  background: -moz-linear-gradient(0deg, #7acc8b 0%, #2c7a56 100%);
+  background: -webkit-linear-gradient(0deg, #7acc8b 0%, #2c7a56 100%);
+  background: -ms-linear-gradient(0deg, #7acc8b 0%, #2c7a56 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2057,11 +2057,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .primary-btn.white:hover {
   background: #fff;
-  color: #8490ff;
+  color: #45a578;
 }
 
 .primary-btn.white:hover span {
-  color: #8490ff;
+  color: #45a578;
 }
 
 .primary-btn2 {
@@ -2251,7 +2251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-area {
-  background: url(../img/about-bg.png) no-repeat center center;
+  background: url(../img/about-bg2.png) no-repeat center center;
   background-size: cover;
   background-position: center;
 }
@@ -2411,7 +2411,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .active-works-carousel .owl-dots .owl-dot.active {
-  background: #8490ff;
+  background: #45a578;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -2527,7 +2527,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-testimonial h4:hover {
-  color: #8490ff;
+  color: #45a578;
   cursor: pointer;
 }
 
@@ -2651,7 +2651,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-area .footer-nav li a:hover {
-  color: #8490ff;
+  color: #45a578;
 }
 
 h6 {
@@ -2662,7 +2662,7 @@ h6 {
 }
 
 .copy-right-text i, .copy-right-text a {
-  color: #8490ff;
+  color: #45a578;
 }
 
 .instafeed {
@@ -2764,12 +2764,12 @@ h6 {
 
 .single-footer-widget ::-moz-selection {
   /* Code for Firefox */
-  background-color: #8490ff;
+  background-color: #45a578;
   color: #777777;
 }
 
 .single-footer-widget ::selection {
-  background-color: #8490ff;
+  background-color: #45a578;
   color: #777777;
 }
 
@@ -2816,7 +2816,7 @@ h6 {
 }
 
 .footer-text a, .footer-text i {
-  color: #8490ff;
+  color: #45a578;
 }
 
 .whole-wrap {
