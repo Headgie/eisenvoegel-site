@@ -2696,11 +2696,14 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 
-.footer-social a:hover i {
+.footer-social a:hover i, .footer-social a:hover svg {
   color: #fff;
 }
 
-.footer-social i {
+
+
+
+.footer-social i, .footer-social svg {
   color: #cccccc;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
