@@ -121,6 +121,61 @@
 				</div>
 			</section>		
 <!-- End banner Area -->
+<section class="about-generic-area section-top-border" id="posledniy-angel">
+	<div class="container">
+		<div class="row" > 
+			<div class="banner-content col-lg-12 col-lg-offset-1 col-md-12 " style="text-align: justify" > 
+				<h2>Последний ангел (2021)</h2>
+				<br>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/posledniy-angel-cover.jpg" alt="" class="img-fluid">
+					</div>
+					
+					<div class="col-md-8 mt-sm-20">
+						<p class="text-justify"> 
+							 Песня «Последний ангел» — это атмосфера жаркого, но дождливого лета. Чувство, будто идешь по городу, словно 
+							 по коридору большой старой квартиры, освещенной закатным солнцем. Сращение звука, света, капель воды и 
+							 внезапно осознанной тишины в сердце летнего дождя. Чувство уюта и одновременно полной незащищенности — 
+							 ангел бросил тебя и ушел в отпуск навсегда. Ты одинок и все-таки жив, а значит, наверное, счастлив.<br> <br> 
+							 Лейбл: <a href="https://bomba-piter.ru/shop/product/zheleznye-ptitsy-poslednii-angel-cingl-intman-3656" target="_blank" rel="noopener noreferrer"><u>Бомба-Питер</u></a> <br>
+							 Обложка: <a href="https://vk.com/id9379418" target="_blank" ><u>Катерина Vydrina</u></a>. <br> 
+							 <div class="stream">
+							 Слушать на стриминговых сервисах: 
+							 <a title="Яндекс Музыка" href="https://music.yandex.ru/album/17813281" target="_blank" rel="noopener noreferrer"><i class="fab fa-yandex"></i></a>
+							 <a title="Apple Music" href="https://music.apple.com/ru/album/%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9-%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB-single/1583799974" 
+								 target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i></a>
+							 <a title="ВКонтакте" href="https://vk.com/music/album/-2000809862_12809862_42490d269f0bf38690?act=album" target="_blank" rel="noopener noreferrer" ><i class="fab fa-vk"></i></a>		
+							 <a title="YouTube Music" href="https://music.youtube.com/playlist?list=OLAK5uy_lTXNXnFbTv6cJMa_XEq0zHBRUtzacj78M" target="_blank" rel="noopener noreferrer" ><i class="fas fa-play-circle"></i></a>			
+							 <a title="Spotify" href="https://open.spotify.com/album/2sFarYcvqUdgMgJpSVNQyB" target="_blank" rel="noopener noreferrer" ><i class="fab fa-spotify"></i></a>
+							 <a title="Deezer" href="https://www.deezer.com/ru/album/255602082" target="_blank" rel="noopener noreferrer" ><i class="fab fa-deezer"></i></a>							 
+							 </div>
+						</p>
+
+					</div>
+				</div>
+
+				<br> <br> 			
+
+					<div class="player">
+						<div class="control-container">
+							<div class="amplitude-play-pause" amplitude-song-index="14"></div>
+						</div>
+						<div id="volume-container">
+							<div class="amplitude-mute amplitude-not-muted"></div>
+							<input type="range" class="amplitude-volume-slider" step=".1" />
+						</div>
+						<div class="meta-container">
+							<div class="song-title">Последний ангел</div>
+						</div>
+						<progress class="amplitude-song-played-progress" amplitude-song-index="14" id="song-played-progress-15"></progress>
+					</div>							  
+					
+					
+			</div>
+		</div>
+	</div>
+</section>
 <section class="about-generic-area section-top-border" id="rybnaya-lavka">
 	<div class="container">
 		<div class="row" > 
@@ -609,7 +664,12 @@
 				"artist": "Железные птицы",
 				"url": "./mp3/rybnaya-lavka.mp3"
 			  }
-			  
+,
+			  {
+				"name": "Последний ангел",
+				"artist": "Железные птицы",
+				"url": "./mp3/posledniy-angel.mp3"
+			  }			  
 			]
 		  });
 
@@ -755,7 +815,14 @@
 			Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
 		  }
 		});		
+		document.getElementById('song-played-progress-15').addEventListener('click', function( e ){
+		  if( Amplitude.getActiveIndex() == 14 ){
+			var offset = this.getBoundingClientRect();
+			var x = e.pageX - offset.left;
 
+			Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
+		  }
+		});		
 		</script>
 		<script src="js/vendor/jquery-2.2.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
