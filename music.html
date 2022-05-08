@@ -121,6 +121,77 @@
 				</div>
 			</section>		
 <!-- End banner Area -->
+<section class="about-generic-area section-top-border" id="haven-22">
+	<div class="container">
+		<div class="row" > 
+			<div class="banner-content col-lg-12 col-lg-offset-1 col-md-12 " style="text-align: justify" > 
+				<h2>Гавань (2022)</h2>
+				<br>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/haven-single_resize.jpg" alt="" class="img-fluid">
+					</div>
+					
+					<div class="col-md-8 mt-sm-20">
+						<p class="text-justify"> 
+							Композиция «Гавань» – это прежде всего плавная, текучая, спокойная атмосфера. Тихий берег с видом на закат, морской бриз, крики чаек — покой, 
+							убежище, точка, где заканчиваются одни пути и начинаются другие. Можно остаться на берегу и отдыхать или сесть на корабль, уплывающий за горизонт 
+							навстречу приключениям. Дополняет сингл контрастная по характеру, шутливая песня «Ветер Коктебеля». Крымское местечко Коктебель, в советское время 
+							носившее название Планерское, отличается постоянно дующими ветрами, поэтому стало центром планеризма еще в двадцатые годы прошлого века. 
+							К тому же это один из самых поэтичных уголков Крыма, где когда-то по пляжу бродили Волошин, Цветаева, Гумилёв, Булгаков.<br> <br> 
+							 Лейбл: <a href="https://bomba-piter.ru/shop/product/zheleznye-ptitsy-gavan-singl-intman-3902" target="_blank" rel="noopener noreferrer"><u>Бомба-Питер</u></a> <br>
+							 <!-- Обложка: <a href="https://vk.com/id9379418" target="_blank" ><u>Катерина Vydrina</u></a>. <br>  -->
+							 <div class="stream">
+							 Слушать на стриминговых сервисах: 
+							 <a title="Яндекс Музыка" href="https://music.yandex.ru/album/22417116" target="_blank" rel="noopener noreferrer"><i class="fab fa-yandex"></i></a>
+							 <a title="Apple Music" href="https://music.apple.com/ru/album/%D0%B3%D0%B0%D0%B2%D0%B0%D0%BD%D1%8C-single/1621686204" 
+								 target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i></a>
+							 <a title="ВКонтакте" href="https://vk.com/music/album/-2000387916_15387916_310c8eb3cbe96536bc" target="_blank" rel="noopener noreferrer" ><i class="fab fa-vk"></i></a>		
+							 <a title="YouTube Music" href="https://music.youtube.com/playlist?list=OLAK5uy_kHFJiycivi_pLQ6Edt5SAQgGPNP6lNvS0" target="_blank" rel="noopener noreferrer" ><i class="fas fa-play-circle"></i></a>	
+							 <a title="Amazon" href="https://music.amazon.com/albums/B09ZS2WTWX" target="_blank" rel="noopener noreferrer" ><i class="fab fa-amazon"></i></a>							 							 		
+							 <a title="Сбер Звук" href="https://zvuk.com/release/23956135" target="_blank" rel="noopener noreferrer" >Сбер Звук</a>
+
+
+							 </div>
+						</p>
+
+					</div>
+				</div>
+
+				<br> <br> 			
+
+					<div class="player">
+						<div class="control-container">
+							<div class="amplitude-play-pause" amplitude-song-index="15"></div>
+						</div>
+						<div id="volume-container">
+							<div class="amplitude-mute amplitude-not-muted"></div>
+							<input type="range" class="amplitude-volume-slider" step=".1" />
+						</div>
+						<div class="meta-container">
+							<div class="song-title">Гавань</div>
+						</div>
+						<progress class="amplitude-song-played-progress" amplitude-song-index="15" id="song-played-progress-16"></progress>
+					</div>	
+
+					<div class="player">
+						<div class="control-container">
+							<div class="amplitude-play-pause" amplitude-song-index="16"></div>
+						</div>
+						<div id="volume-container">
+							<div class="amplitude-mute amplitude-not-muted"></div>
+							<input type="range" class="amplitude-volume-slider" step=".1" />
+						</div>
+						<div class="meta-container">
+							<div class="song-title">Ветер Коктебеля</div>
+						</div>
+						<progress class="amplitude-song-played-progress" amplitude-song-index="16" id="song-played-progress-17"></progress>
+					</div>											
+					
+			</div>
+		</div>
+	</div>
+</section>
 <section class="about-generic-area section-top-border" id="posledniy-angel">
 	<div class="container">
 		<div class="row" > 
@@ -669,7 +740,17 @@
 				"name": "Последний ангел",
 				"artist": "Железные птицы",
 				"url": "./mp3/posledniy-angel.mp3"
-			  }			  
+			  },
+				{
+				"name": "Гавань",
+				"artist": "Железные птицы",
+				"url": "./mp3/eisenvoegel-gavan-22-1-gavan.mp3"
+			  },
+				{
+				"name": "Ветер Коктебеля",
+				"artist": "Железные птицы",
+				"url": "./mp3/eisenvoegel-gavan-22-2-veter_koktebelya.mp3"
+			  }			  			  			  
 			]
 		  });
 
@@ -823,6 +904,24 @@
 			Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
 		  }
 		});		
+
+		document.getElementById('song-played-progress-16').addEventListener('click', function( e ){
+		  if( Amplitude.getActiveIndex() == 15 ){
+			var offset = this.getBoundingClientRect();
+			var x = e.pageX - offset.left;
+
+			Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
+		  }
+		});		
+		document.getElementById('song-played-progress-17').addEventListener('click', function( e ){
+		  if( Amplitude.getActiveIndex() == 16 ){
+			var offset = this.getBoundingClientRect();
+			var x = e.pageX - offset.left;
+
+			Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
+		  }
+		});		
+		
 		</script>
 		<script src="js/vendor/jquery-2.2.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
